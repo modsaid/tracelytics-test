@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
   end
 
   def show
-    product=Product.where(:code=>params[:code]).first
+    product=Product.where(:code=>params[:id]).first
     respond_to do |format|
       format.json { render :text=>[product].try(:to_json) }
   	end
