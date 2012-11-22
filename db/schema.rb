@@ -10,6 +10,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 0) do
+ActiveRecord::Schema.define(:version => 20121122143708) do
+
+  create_table "products", :force => true do |t|
+    t.string   "code"
+    t.string   "name"
+    t.integer  "category_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "products", ["code"], :name => "index_products_on_code"
 
 end
