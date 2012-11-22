@@ -1,13 +1,13 @@
 source 'http://rubygems.org'
+source 'http://gem.tracelytics.com'
 
 gem 'rails', '3.0.9'
-
-# Bundle edge Rails instead:
-# gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'mysql2', '~> 0.2.6'
 
 gem 'rake', '0.8.7'
+gem 'oboe'
+
 # Use unicorn as the web server
 # gem 'unicorn'
 
